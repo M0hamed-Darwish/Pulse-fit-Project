@@ -1,0 +1,241 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #0a0b1e;
+}
+
+nav {
+  width: 90%;
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  background-color: #161933;
+  backdrop-filter: blur(20px);
+  border-radius: 50px;
+  box-shadow: 0px 8px 50px -10px rgb(26, 25, 27);
+}
+nav h2 {
+  margin: 0;
+  padding: 5px;
+}
+
+nav h2 a {
+  text-decoration: none;
+  color: white;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 3px;
+}
+nav ul li {
+  transition: 0.5s;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li:hover {
+  background-color: darkblue;
+  padding: 5px;
+  border-radius: 20px;
+}
+nav ul li a:hover {
+  color: grey;
+}
+@media (min-width: 768px) {
+  nav {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  nav h2 {
+    margin: 18.72px;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: large;
+    gap: 50px;
+  }
+  nav ul li:hover {
+    background-color: darkblue;
+    border-radius: 20px;
+    padding: 10px;
+  }
+}
+.hero-words {
+  color: #b3b8db;
+}
+.wth-cont {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-words span {
+  padding: 10px;
+  color: #b3b8db;
+  display: inline-block;
+  background-color: darkred;
+  border: 2px solid red;
+  border-radius: 10px;
+  animation: pulses 1.2s infinite alternate ease-in-out;
+}
+.hero-words button {
+  background-color: #00ffaa;
+  color: grey;
+  border: none;
+  padding: 10px 24px;
+  font-size: large;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.hero-words button:hover {
+  background-color: #00cc88;
+  box-shadow: 0px 0px 15px rgba(0, 255, 170, 0.4);
+  color: white;
+}
+
+.wth-cont img {
+  width: 300px;
+}
+.wth-cont video {
+  position: relative;
+  bottom: 200px;
+  width: 105px;
+  border-radius: 25px;
+}
+
+@keyframes pulses {
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+#featurs {
+  display: grid;
+  grid-template-areas: "card1", "card2", "card3";
+  justify-content: center;
+  gap: 10px;
+  scroll-margin-top: 120px;
+}
+.card1,
+.card2,
+.card3 {
+  width: 300px;
+  height: 300px;
+  background-color: #161933;
+  border-radius: 10px;
+}
+
+.card1 {
+  grid-area: "card1";
+}
+.card2 {
+  grid-area: "card2";
+}
+card3 {
+  grid-area: "card3";
+}
+
+@media (min-width: 768px) {
+  #featurs {
+    grid-template-areas: "card1 card2 card3";
+    justify-content: space-around;
+  }
+}
+#prices {
+  margin-top: 50px;
+  display: grid;
+  grid-template-areas: "price1", "price2", "price3";
+  justify-content: center;
+  gap: 10px;
+  scroll-margin-top: 90px;
+}
+.price1,
+.price2,
+.price3 {
+  width: 300px;
+  height: 600px;
+  background-color: #161933;
+  border-radius: 10px;
+}
+.price1 {
+  grid-area: "price1";
+}
+.price2 {
+  grid-area: "price2";
+  border: 2px solid #00ffaa;
+}
+.price2::before {
+  content: "Best Seller";
+  position: relative;
+  background-color: #00ffaa;
+  border-radius: 10px 10px 0 0;
+  padding: 5px;
+  bottom: 23px;
+  left: 5px;
+}
+.price3 {
+  grid-area: "price3";
+}
+@media (min-width: 768px) {
+  #prices {
+    grid-template-areas: "price1 price2 price3";
+    justify-content: space-around;
+  }
+}
+#contact {
+  margin-top: 50px;
+  display: grid;
+  grid-template-areas: "price1", "price2", "price3";
+  justify-content: center;
+  gap: 10px;
+  scroll-margin-top: 90px;
+}
+.Cnumber,
+.Cmail,
+.Cform {
+  width: 300px;
+  height: 300px;
+  background-color: #161933;
+  border-radius: 10px;
+}
+.Cnumber {
+  grid-area: "Cnumber";
+}
+.Cmail {
+  grid-area: "Cmail";
+}
+.Cform {
+  grid-area: "Cform";
+}
