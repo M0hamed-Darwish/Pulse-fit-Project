@@ -65,28 +65,44 @@
       <div class="price3">PRICE3</div>
     </div>
     <div id="contact">
-      <div class="Cnumber">
-        <img src="" alt="" />
-        <h3>HOTLINE <br />12345</h3>
-      </div>
-      <div class="Cmail">
-        <img src="" alt="" />
-        <h3>pulse-fit@gmail.com</h3>
-      </div>
+      <a href="tel:12345"
+        ><div class="Cnumber">
+          <img src="assets/pics/tel-photo.png" alt="Telephone photo" />
+          <span>HOTLINE :</span>
+          <strong>12345</strong>
+        </div></a
+      >
+      <a href="mailto:pulse-fit@gmail.com">
+        <div class="Cmail">
+          <img src="assets/pics/mail-photo.png" alt="mail photo" />
+          <h3>pulse-fit@gmail.com</h3>
+        </div></a
+      >
       <div class="Cform">
         <form action="" method="post">
-          <input type="text" name="user_name" placeholder="Name" />
-          <input type="tel" name="user_tel" placeholder="Number" />
-          <input type="email" name="user_mail" placeholder="Mail" />
+          <input type="text" name="user_name" placeholder="Name" /><br />
           <input
-            type="text"
+            type="tel"
+            name="user_tel"
+            placeholder="+20 1XXXXXXXXX"
+          /><br />
+          <input
+            type="email"
+            name="user_mail"
+            placeholder="example@mail.com"
+          /><br />
+          <textarea
             name="subject"
             placeholder="How can we help you?"
-          /><br />
+          ></textarea>
+
           <button type="submit">Send Message</button>
         </form>
       </div>
     </div>
+    <!-- END OF CONTACT SECTION -->
+
+    <div></div>
     <script src="JS/script.js"></script>
   </body>
 </html>
