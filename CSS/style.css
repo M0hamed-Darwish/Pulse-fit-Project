@@ -76,7 +76,6 @@ nav ul li a:hover {
 }
 .hero-words {
   color: #b3b8db;
-  width: 70%;
 }
 .wth-cont {
   position: relative;
@@ -84,7 +83,6 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  left: -150px;
 }
 .hero-words span {
   padding: 10px;
@@ -142,6 +140,12 @@ nav ul li a:hover {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
+  }
+  .hero-words {
+    width: 70%;
+  }
+  .wth-cont {
+    left: -150px;
   }
 }
 
@@ -460,7 +464,9 @@ footer a {
 footer ul {
   padding-left: 10px;
 }
-
+footer div {
+  width: calc(100 / 3);
+}
 @media (min-width: 768px) {
   #about {
     width: 500px;
